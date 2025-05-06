@@ -5,11 +5,21 @@ export const Card = ({
     title,
     description,
     price,
-    isHighlighted,
+    onClick,
+    isSelected,
 }) => {
     return (
         <>
-            <div className="group overflow-hidden relative border border-neutral-800 w-80 h-70 bg-black rounded-lg flex flex-col justify-center gap-3 p-8 cursor-pointer hover:border-amber-500 transition duration-300">
+            <div
+                onClick={onClick}
+                className={`relative group border w-80 h-70 bg-black rounded-lg flex flex-col justify-center gap-3 p-8 cursor-pointer transition duration-300
+                ${
+                    isSelected
+                        ? "border-amber-500"
+                        : "border-neutral-800 hover:border-amber-500"
+                }
+            `}
+            >
                 <div className="bg-neutral-800 rounded-full w-10 h-10 flex items-center justify-center">
                     <Icon className="text-white" size={30} color="white"></Icon>
                 </div>

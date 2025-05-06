@@ -1,9 +1,19 @@
 import React from "react";
 import { Scissors } from "lucide-react";
+import { enviarWhatsApp } from "../helpers/whatsappMsj";
 export const Hero = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const texto = `Hola, quiero reservar un turno! Que horario tenes disponible?`;
+
+        enviarWhatsApp(texto);
+    };
     return (
         <>
-            <section className="relative w-full flex items-center justify-center h-160 bg-black text-gray-100">
+            <section
+                id="hero"
+                className="relative w-full flex items-center justify-center h-160 bg-black text-gray-100"
+            >
                 <div className="relative z-10 grid items-center gap-6 md:grid-cols-2 md:gap-12">
                     <div className="relative flex flex-col items-start ">
                         <div className="flex gap-2 ml-1">
@@ -20,13 +30,18 @@ export const Hero = () => {
                             alta calidad.
                         </p>
                         <div className="flex gap-2 mt-6">
-                            <button className="flex items-center gap-2 bg-white text-black px-7 py-2 rounded-md cursor-pointer hover:bg-[#ffffffe7] transition duration-200">
+                            <button
+                                onClick={handleSubmit}
+                                className="flex items-center gap-2 bg-white text-black px-7 py-2 rounded-md cursor-pointer hover:bg-[#ffffffe7] transition duration-200"
+                            >
                                 <Scissors size={20} />
                                 RESERVAR AHORA
                             </button>
-                            <button className="bg-black text-white px-7 py-2 rounded-md border border-[#ffffff30] font-semibold cursor-pointer hover:bg-[#ffffff25] transition duration-200">
-                                VER SERVICIOS
-                            </button>
+                            <a href="#services">
+                                <button className="bg-black text-white px-7 py-2 rounded-md border border-[#ffffff30] font-semibold cursor-pointer hover:bg-[#ffffff25] transition duration-200">
+                                    VER SERVICIOS
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div className="relative mx-auto aspect-square w-full max-w-md rounded-full border-4 border-muted p-4 md:ml-auto border-[#ffffff2d]">

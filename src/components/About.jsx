@@ -4,7 +4,10 @@ import { Check } from "lucide-react";
 export const About = () => {
     return (
         <>
-            <section className="relative w-full h-135 grid grid-cols-2 items-center text-white bg-[#2E2E2E]">
+            <section
+                id="about"
+                className="relative w-full h-135 grid grid-cols-2 items-center text-white bg-[#2E2E2E]"
+            >
                 <div className="flex justify-center items-center">
                     <div className="bg-white w-[80%] h-100 flex items-center text-black justify-center rounded-xl">
                         hola
