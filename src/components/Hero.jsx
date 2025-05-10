@@ -1,4 +1,3 @@
-import React from "react";
 import { Scissors } from "lucide-react";
 import { enviarWhatsApp } from "../helpers/whatsappMsj";
 export const Hero = () => {
@@ -12,13 +11,13 @@ export const Hero = () => {
         <>
             <section
                 id="hero"
-                className="relative w-full flex items-center justify-center h-160 bg-black text-gray-100"
+                className="relative w-full flex items-center justify-center h-160 bg-[#0a0a0a] text-gray-100"
             >
                 <div className="relative z-10 grid items-center gap-6 md:grid-cols-2 md:gap-12">
                     <div className="relative flex flex-col items-start ">
                         <div className="flex gap-2 ml-1">
-                            <div className="bg-blue-500 px-4 py-0.5"></div>
-                            <div className="bg-red-500 px-4 py-0.5"></div>
+                            <div className="bg-blue-500 px-5 py-0.5"></div>
+                            <div className="bg-red-500 px-5 py-0.5"></div>
                         </div>
                         <h1 className="text-7xl font-bold font-[Montserrat]">
                             ESTILO Y{" "}

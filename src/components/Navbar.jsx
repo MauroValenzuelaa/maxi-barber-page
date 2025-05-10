@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import { enviarWhatsApp } from "../helpers/whatsappMsj";
 export const Navbar = () => {
@@ -10,10 +10,10 @@ export const Navbar = () => {
     };
 
     const navLinks = [
-        { name: "Inicio", href: "#" },
-        { name: "Sobre Nosotros", href: "#about" },
-        { name: "Servicios", href: "#services" },
-        { name: "Contacto", href: "#contact" },
+        { name: "INICIO", href: "#" },
+        { name: "SOBRE NOSOTROS", href: "#about" },
+        { name: "SERVICIOS", href: "#services" },
+        { name: "CONTACTO", href: "#contact" },
     ];
 
     return (
@@ -24,7 +24,7 @@ export const Navbar = () => {
             >
                 <div className="flex h-16 items-center justify-around">
                     <div>
-                        <a href="#" className="flex items-center gap-1">
+                        <a href="hero" className="flex items-center gap-1">
                             <img
                                 src="/src/img/Logomaxi.png"
                                 alt="Maxi Barber logo"

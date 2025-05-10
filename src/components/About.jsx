@@ -1,4 +1,3 @@
-import React from "react";
 import { Check } from "lucide-react";
 
 export const About = () => {
@@ -10,7 +9,11 @@ export const About = () => {
             >
                 <div className="flex justify-center items-center">
                     <div className="bg-white w-[80%] h-100 flex items-center text-black justify-center rounded-xl">
-                        hola
+                        <img
+                            src="./src/img/fondo.png"
+                            alt=""
+                            className="rounded-lg object-cover w-full h-full overflow-hidden"
+                        />
                     </div>
                 </div>
                 <div>

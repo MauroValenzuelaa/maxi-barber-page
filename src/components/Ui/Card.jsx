@@ -1,5 +1,3 @@
-import React from "react";
-import { Icon } from "lucide-react";
 export const Card = ({
     icon: Icon,
     title,

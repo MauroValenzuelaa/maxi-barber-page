@@ -1,4 +1,3 @@
-import React from "react";
 import { Phone, Clock, MapPin, Mail, Instagram } from "lucide-react";
 import { enviarWhatsApp } from "../helpers/whatsappMsj";
 
@@ -94,7 +93,7 @@ Mensaje: ${mensaje}`;
                                 </div>
                                 <div>
                                     <p className="text-[#ffffff8e] font-[Montserrat] mt-3">
-                                        info@maxibarber.com
+                                        infomaxibarber@gmail.com
                                     </p>
                                 </div>
                             </div>
@@ -104,7 +103,7 @@ Mensaje: ${mensaje}`;
                         <h3 className="font-bold font-[Montserrat]">
                             Seguinos en redes sociales!
                         </h3>
-                        <div className="bg-black p-2 rounded-full w-9 mt-3">
+                        <div className="bg-[#0a0a0a] p-2 rounded-full w-9 mt-3">
                             <a
                                 href="https://www.instagram.com/maxi.barber.okk/"
                                 target="_blank"
@@ -117,7 +116,7 @@ Mensaje: ${mensaje}`;
                 <form
                     onSubmit={handleSubmit}
                     action=""
-                    className="bg-black rounded-lg p-5 w-2xl"
+                    className="bg-[#0a0a0a] rounded-lg p-5 w-2xl"
                 >
                     <h2 className="text-2xl font-bold font-[Montserrat]">
                         ENVIAME UN MENSAJE

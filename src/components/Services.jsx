@@ -1,8 +1,8 @@
-import React from "react";
 import { Card } from "./Ui/Card";
 import { Scissors, Beaker, SprayCan } from "lucide-react";
 import { useState } from "react";
 import { enviarWhatsApp } from "../helpers/whatsappMsj";
+import { MessageCircleMore } from "lucide-react";
 export const Services = () => {
     const [servicioSeleccionado, setServicioSeleccionado] = useState(null);
 
@@ -86,8 +86,9 @@ export const Services = () => {
                 </div>
                 <button
                     onClick={handleReservar}
-                    className="bg-white mb-10 text-black mt-5 px-7 py-2 rounded-md border border-[#ffffff30] font-semibold cursor-pointer hover:bg-[#ffffffb5] transition duration-200"
+                    className="bg-white mb-10 flex gap-2 text-black mt-5 px-7 py-2 rounded-md border border-[#ffffff30] font-semibold cursor-pointer hover:bg-[#ffffffb5] transition duration-200"
                 >
+                    <MessageCircleMore className="text-green-400 font-extrabold" />
                     RESERVAR CITA
                 </button>
             </section>
